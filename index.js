@@ -12,12 +12,12 @@ const router = require('./routes');
 //conexión a la base de datos
 // const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
-const urlDB = 'mongodb://localhost:27017/dbsistema';
+const urlDB = 'mongodb+srv://recuperacion_ciclo3_user:yDbQGrKv68wMkQL@recuperacionciclo3.dwf6b.mongodb.net/recuperacionDB?retryWrites=true&w=majority';
 mongoose.connect(urlDB, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
-.then(mongoose => console.log('Conectado on 27017'))
+.then(mongoose => console.log('Conectado on ATLAS'))
 .catch(err => console.log(err))
 
 const app = express();

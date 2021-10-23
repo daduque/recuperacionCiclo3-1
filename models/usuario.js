@@ -12,7 +12,7 @@ const usuarioSchema = new Schema({
         type : String,
         required : true,
         maxlength : 100,
-        unique : true   
+        unique : true
     },
     password: {
         type : String,
@@ -28,7 +28,10 @@ const usuarioSchema = new Schema({
         type : Number,
         default : 1     
     },
-    createAt: { type: Date, default: Date.now },
+    createAt: { 
+        type: Date, 
+        default: Date.now 
+    },
   });
 
 //   Convertirlo en un modelo

@@ -6,7 +6,7 @@ const auth = require('../middlewares/auth')
 
 
 router.post('/add', usuarioController.add);
-router.get('/list', auth.verificarUsuario, usuarioController.list);
+router.get('/list', usuarioController.list);
 router.put('/update', usuarioController.update);
 router.put('/enabled', usuarioController.enabled);
 router.put('/disabled', usuarioController.disabled);
