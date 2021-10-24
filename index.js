@@ -12,7 +12,7 @@ const router = require('./routes');
 //conexión a la base de datos
 // const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
-const urlDB = 'mongodb+srv://recuperacion_ciclo3_user:yDbQGrKv68wMkQL@recuperacionciclo3.dwf6b.mongodb.net/recuperacionDB?retryWrites=true&w=majority';
+const urlDB = 'mongodb://localhost:27017/dbsistema';
 mongoose.connect(urlDB, {
     useNewUrlParser: true,
     useUnifiedTopology: true
